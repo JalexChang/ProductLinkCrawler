@@ -1,0 +1,13 @@
+{
+  "name": "ProductLinkCrawler",
+  "author" : {
+    "name": "JalexChang",
+    "email": "oscay0723@gmail.com" 
+  },
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "phantomjs-prebuilt": "latest",
+    "casperjs": "latest"
+  }
+}
