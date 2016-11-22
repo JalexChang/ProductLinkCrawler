@@ -17,7 +17,7 @@ Crawler.start(url,function(){});
 Crawler.waitForSelector(wait_tag,function(){
 	//exist, try to query html back
 	console.log(1);
-	ScolltoButton(0,getLinks);
+	ScrolltoBottom(0,getLinks);
 },function(){
 	//timeout
 	console.log("<List></List>");
@@ -25,14 +25,14 @@ Crawler.waitForSelector(wait_tag,function(){
 },4000);
 
 
-function ScolltoButton(Height,cb){
+function ScrolltoBottom(Height,cb){
 	Crawler.then(function(){
 		var NewHeight = this.evaluate(function(Height){
 			window.scrollTo(0,Height+1000);
 			return document.body.scrollHeight;
 		},Height);
 		this.wait(1000);
-		if(NewHeight > Height) ScolltoButton(Height+1000,cb);
+		if(NewHeight > Height) ScrolltoBottom(Height+1000,cb);
 		else cb();
 	});
 }
