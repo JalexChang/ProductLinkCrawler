@@ -4,7 +4,7 @@ This web crawler is built by [CasperJS](https://github.com/casperjs/casperjs), w
 
 # Guideline
 ## Clone this Repository
-    git clone git@github.com:JalexChang/ProductLinkCrawler.git
+    git clone https://github.com/JalexChang/ProductLinkCrawler.git
 ## Install node modules
     npm install
 ## Add targeted webpage urls in *[crawler.js](https://github.com/JalexChang/ProductLinkCrawler/blob/master/crawler.js)*
